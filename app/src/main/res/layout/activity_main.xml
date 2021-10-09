@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    layout_height="wrap_content"
+    layout_width="wrap_content"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        tools:srcCompat="@drawable/ic_launcher_background" />
+
+    <TextView
+        android:text="@string/String_text"
+        style="@style/style"
+        />
+
+    <EditText
+        android:id="@+id/nameEtxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:text="Name"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        android:padding="8dp"
+        />
+
+    <Button
+        android:id="@+id/AddBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:text="Add"
+        android:layout_gravity="center"
+        />
+
+    <TextView
+        android:id="@+id/hobbiesTxt"
+        android:text="Hobbies"
+        style="@style/style"
+
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/biotxt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:text="@string/bioText"
+            android:textSize="20dp" />
+    </ScrollView>
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>
